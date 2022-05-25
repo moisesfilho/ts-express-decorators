@@ -1,21 +1,21 @@
-# How To Write Simple Router Decorators For ExpressJS With Typescript?
+# Como escrever decoradores de rota simples para ExpressJs com Typescript?
 
-Source code for [How To Write Simple Router Decorators For ExpressJS With Typescript?](https://hoangdv.medium.com/how-to-write-simple-router-decorators-for-expressjs-with-typescript-3b8340b4d453?sk=0d8cff7a57fef788c706b3c8622fb351)
+Código para o artigo [How To Write Simple Router Decorators For ExpressJS With Typescript?](https://hoangdv.medium.com/how-to-write-simple-router-decorators-for-expressjs-with-typescript-3b8340b4d453?sk=0d8cff7a57fef788c706b3c8622fb351)
 
-## How to start?
+## Como iniciar?
 
-1. Install dependencies
+1. Instalando dependências
 
     ```shell
     npm ci
     ```
 
-3. Start server in development mode
+3. Iniciando servidor no modo desenvolvimento
 
     ```shell
     npm run dev
     ```
 
-4. Follow apis call document `./apis.http` file
+4. Siga as chamadas do documento `./apis.http`
 
 

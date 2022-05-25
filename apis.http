@@ -14,3 +14,17 @@ GET http://localhost:3000/cats
 
 ### Find cat by name
 GET http://localhost:3000/cats/new-cat
+
+### Adiconando novo cliente
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+  "nome": "Jose"
+}
+
+### Obter Clientes
+GET http://localhost:3000/clientes
+
+### Buscar cliente por nome
+GET http://localhost:3000/clientes/Jose

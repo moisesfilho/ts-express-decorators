@@ -21,7 +21,7 @@ class Application {
       res.json({ message: 'Hello World!' });
     });
 
-    const info: Array<{ api: string, handler: string }> = [];
+    const info: Array<{ api: string; handler: string }> = [];
 
     controllers.forEach((controllerClass) => {
       const controllerInstance: { [handleName: string]: Handler } = new controllerClass() as any;
@@ -31,7 +31,7 @@ class Application {
 
       const exRouter = express.Router();
 
-      routers.forEach(({ method, path, handlerName}) => {
+      routers.forEach(({ method, path, handlerName }) => {
         exRouter[method](path, controllerInstance[String(handlerName)].bind(controllerInstance));
 
         info.push({

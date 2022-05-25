@@ -1,12 +1,12 @@
 import 'reflect-metadata';
-
+import dotenv from 'dotenv';
 import application from './application';
 import * as http from 'http';
 
-const PORT = process.env.PORT || 3000;
-
+dotenv.config();
+const port = process.env.PORT || 3000;
 const server = http.createServer(application.instance);
 
-server.listen(PORT, () => {
-  console.log(`Server is listening on :${PORT}`);
+server.listen(port, () => {
+  console.log(`Server is listening on :${port}`);
 });
