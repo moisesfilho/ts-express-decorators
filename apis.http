@@ -1,8 +1,8 @@
 ### Hello
-GET http://localhost:3000
+GET http://localhost:8000
 
 ### Add new cat
-POST http://localhost:3000/cats
+POST http://localhost:8000/cats
 Content-Type: application/json
 
 {
@@ -10,13 +10,13 @@ Content-Type: application/json
 }
 
 ### Get cats
-GET http://localhost:3000/cats
+GET http://localhost:8000/cats
 
 ### Find cat by name
-GET http://localhost:3000/cats/new-cat
+GET http://localhost:8000/cats/new-cat
 
 ### Adiconando novo cliente
-POST http://localhost:3000/clientes
+POST http://localhost:8000/clientes
 Content-Type: application/json
 
 {
@@ -24,7 +24,10 @@ Content-Type: application/json
 }
 
 ### Obter Clientes
-GET http://localhost:3000/clientes
+GET http://localhost:8000/clientes
 
 ### Buscar cliente por nome
-GET http://localhost:3000/clientes/Jose
+GET http://localhost:8000/clientes/nome/Jose
+
+### Delete cliente por nome
+DELETE http://localhost:8000/clientes/delete/Jose
